@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+{% from '_card.html' import card %}
+
+{% block content %}
+
+    <div class="wrapper">
+        <h2 class="wrapper__place">Global</h2>
+        <h3 class="wrapper__date">{{ date['date'] }}</h3>
+    </div>
+
+    <div class="cards">
+       {{ card("Cases", cases['totalCases'], cases['todayCases']) }}
+       {{ card("Deaths", deaths['totalDeaths'], deaths['todayDeaths']) }}
+    </div>
+
+{% endblock %}

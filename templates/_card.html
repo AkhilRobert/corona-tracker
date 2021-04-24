@@ -1,0 +1,9 @@
+{% macro card(name, new_cases, total_cases) %}
+<div class="cards__cases">
+    <div class="cards__wrapper">
+        <h3 class="cards__heading">{{ name }}</h3>
+        <p><span class="cards__detailKey">New</span>: {{ new_cases }}</p>
+        <p><span class="cards__detailKey">Total</span>: {{ total_cases }}</p>
+    </div>
+</div>
+{% endmacro %}

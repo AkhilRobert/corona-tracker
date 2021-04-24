@@ -1,0 +1,89 @@
+.header {
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.header__heading {
+    font-size: calc(1.6rem + 3vw);
+    color: white;
+    padding: .8rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: .125rem;
+}
+
+.wrapper > h3 {
+    padding: .5rem 0;
+}
+
+.wrapper__date {
+    font-weight: normal;
+}
+
+.wrapper__place {
+    padding-top: 3.125rem;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+
+.cards__cases, .cards__deaths {
+    width: 100%;
+}
+
+.cards__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightblue;
+    margin: 0 2rem;
+    padding: 6rem 0;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px)  {
+    .cards {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        min-width: 90vw;
+    }
+
+    .cards__wrapper {
+        margin: 2rem 0;
+    }
+
+    .cards__deaths, .cards__cases {
+        max-width: 90%;
+    }
+}
+
+.cards__wrapper > h3 {
+    padding: .5rem 0;
+}
+
+.cards__wrapper > p {
+    padding: .3rem 0;
+}
+
+.cards__heading {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.cards__detailKey {
+    font-weight: bold;
+}

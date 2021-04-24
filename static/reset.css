@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #1B3578;
+    --primary-font: 'Poppins', sans-serif;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    font-family: var(--primary-font)
+}
